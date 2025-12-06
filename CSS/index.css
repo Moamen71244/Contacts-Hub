@@ -1,0 +1,438 @@
+
+:root {
+    font-size: 13px;
+    --primary-color: #6133f9;
+    --accent-red: #f44336;
+    --accent-yellow: #ff9800;
+    --bg-light: #f4f6fa;
+    --card-bg: #ffffff;
+    --tag-bg-school: #e0f7fa;
+    --tag-color-school: #00bcd4;
+    --tag-bg-emergency: #ffebee;
+    --tag-color-emergency: var(--accent-red);
+    --tag-bg-family: #e8eaf6;
+    --tag-color-family: #3f51b5;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: .5rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control::placeholder{
+    font-size: small;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 2px 1px rgba(13,110,253,.25);
+}
+.fs-8{
+    font-size: 11px;
+}
+.spechial-hover{
+    transition: box-shadow .2s;
+}
+.fs-7{
+    font-size: .8rem;
+}
+.text-primary-color{
+    color: var(--primary-color);
+}
+.bg-primary-color{
+    background-color: var(--primary-color);
+}
+.img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.sec1 {
+    margin-block: 80px 50px;
+}
+i{
+    color: gray;
+}
+span.icon{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    background-color: var(--primary-color);
+}
+
+.icon-btn {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+nav{
+    box-shadow: 0 .5px 4px rgba(174, 174, 174, 0.281);
+}
+header .btn{
+    transition: transform .2s;
+}
+header .btn:hover {
+    box-shadow: 1px 2px 6px var(--primary-color);
+    transform: translateY(-3px);
+    color: var(--bs-btn-hover-color);
+    background-color: var(--primary-color);
+    border-color: transparent;
+    }
+
+
+header .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--primary-color);
+    border: none;
+}
+.btn:hover{
+    color: var(--bs-btn-hover-color);
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
+.metric-value {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.metric-icon-total,
+.metric-icon-favorites,
+.metric-icon-emergency {
+    width:30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: white;
+    margin-right: 5px;
+}
+
+.metric-icon-total {
+    background-color: var(--primary-color);
+}
+.metric-icon-favorites {
+    background-color: var(--accent-yellow);
+}
+.metric-icon-emergency {
+    background-color: var(--accent-red);
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.fav-flag{
+    width: 18px;
+    aspect-ratio: 1/1;
+    border: 1.5px solid white;
+    background-color: gold;
+    top: -10%;
+    right: -5%;
+    font-size: 5px;
+}
+.em-flag{
+    width: 18px;
+    aspect-ratio: 1/1;
+    border: 1.5px solid white;
+    background-color: rgb(250, 49, 3);
+    bottom: -10%;
+    right: -6%;
+    font-size: 5px;
+}
+.contact-details{
+    border: 1px solid rgba(128, 128, 128, 0.414);
+}
+.spechial-hover:hover{
+    box-shadow: 1px 1px 4px rgb(182, 181, 181);
+}
+.user-d{
+    width: 25px;
+    aspect-ratio: 1/1;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone span,.phone span i{
+    background-color: #dbeafe;
+    color: #155dfc;
+}
+.email span,.email span i,.action-icon1{
+    background-color: #ede9fe;
+    color: #7f22fe;
+}
+.action-icon1 i{
+    
+    color: #7f22fe;
+}
+.action-icon2 i{
+
+    color: #009966;
+}
+.location span,.location span i,.action-icon2{
+    background-color: #d0fae5;
+    color: #009966;
+}
+.action-icon1,.action-icon2{
+    transition: background-color .2s;
+    cursor: pointer;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    font-size: 13px;
+}
+.action-icon1:hover{
+    background-color: #dcd5fc;
+}
+.action-icon2:hover{
+    background-color: #a8f7cf;
+}
+
+.bg-red {
+    background-color: var(--accent-red);
+}
+.bg-blue {
+    background-color: #3f51b5;
+}
+
+
+
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.tag-school {
+    background-color: var(--tag-bg-school);
+    color: var(--tag-color-school);
+}
+
+.tag-emergency {
+    background-color: var(--tag-bg-emergency);
+    color: var(--tag-color-emergency);
+}
+
+.tag-family {
+    background-color: var(--tag-bg-family);
+    color: var(--tag-color-family);
+}
+
+
+.action-icon,.heart-i-emy {
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.star-i-fav,.star-i,
+.heart-i,.heart-i-emy,
+.pen-i,
+.trash-i{
+    transition: background-color .2s;
+    width: 1.875rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20%;
+}
+.star-i-fav i,.star-i i,
+.heart-i i,.heart-i-emy i,
+.pen-i i,
+.trash-i i{
+    font-size: 10px;
+}
+.star-i-fav i{
+    color: gold;
+}
+.star-i-fav{
+    background-color: rgb(255, 253, 244);
+}
+.star-i-fav:hover{
+    background-color: rgb(255, 250, 230);
+}
+.star-i:hover{
+    background-color: rgb(255, 250, 230);
+}
+.star-i:hover i{
+    color: gold;
+}
+.heart-i:hover{
+   background-color: rgb(255, 240, 240);
+   color: red;
+}
+.heart-i:hover i{
+   color: red;
+}
+.pen-i:hover{
+    background-color: rgb(230, 236, 255);
+}
+.pen-i:hover i{
+    color: #1158f2;
+}
+.heart-i-emy{
+    background-color: rgb(255, 241, 241);
+}
+.heart-i-emy:hover{
+    background-color: rgb(255, 205, 205);
+}
+.trash-i:hover{
+    background-color: rgb(255, 230, 230);
+}
+.trash-i:hover i{
+   color: red;
+}
+/* --- 5. SIDEBAR CARDS --- */
+.card-favorites-highlight {
+    background-color: #fffde7;
+}
+.user-image{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+.fav-icon{
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+.contact{
+    transition: background-color .3s;
+    background-color: rgba(244, 244, 244, 0.314);
+}
+.contact:hover{
+    background-color: #fffde7;
+}
+.contact:hover .action-icon2{
+     background-color: #00be7f;
+}
+.contact:hover .action-icon2 i{
+    color: white;
+}
+
+
+.card-emergency-highlight {
+    background-color: #fce4e4;
+}
+.emer .contact:hover{
+    background-color: #fce4ec;
+}
+.emer .contact .action-icon2{
+    transition: background-color .2s;
+    background-color:#ffbdbd ;
+}
+.emer .contact .action-icon2 i{
+    color: #ff2056;
+}
+.emer .contact:hover .action-icon2{
+     background-color: #ff2056;
+}
+.contact:hover .action-icon2 i{
+    color: white;
+}
+
+.icon-yellow {
+    color: var(--accent-yellow);
+}
+.icon-red {
+    color: var(--accent-red);
+}
+
+.smaller {
+    font-size: 0.7rem;
+}
+
+.call-icon {
+    font-size: 16px;
+    color: white;
+    background-color: var(--accent-red);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+textarea{
+    height: 40px;
+    resize: none;
+}
+
+.user-img .img{
+    
+    background-color: red;
+    width: 7.25rem;
+    height: 7.25rem;
+}
+.chengeP{
+    background-color: rgba(212, 212, 212, 0.478);
+    border: .3px solid rgba(128, 128, 128, 0.055);
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.067);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+}
+
+.form{
+    background-color: var(--card-bg);
+
+    position: absolute;
+   
+    right: 10px;
+    left: 10px;
+
+    height: 90vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+#update{
+    background-color: rgb(14, 21, 230);
+}
+#allContactsCards .card{
+    height: 250px;
+}
+#contactImage{
+    background-color: #1158f2;
+}
+.swal2-container {
+    z-index: 99999999999999 !important;
+}
+
+#favContacts,#emyContacts{
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+s{
+
+    color :#ff9800; color: #ffaa2c ;
+    color :#4c00ff; color: #3900bf ;
+    color :#ee058d; color: #ee05c7 ;
+    color :#7501c2; color: #a73cee ;
+}
